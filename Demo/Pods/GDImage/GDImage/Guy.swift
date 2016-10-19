@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Guy{
-    init(){}
+public class Guy{
+    public init(){}
     
     public func sum(a:Int, b:Int) -> Int{
         return a + b

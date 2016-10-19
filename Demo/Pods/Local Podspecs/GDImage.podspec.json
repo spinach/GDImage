@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "summary": "A Swift library for downloading images",
   "description": "A Swift library for downloading and caching images from the web",
-  "homepage": "http://github.com/spinach/GDImage",
+  "homepage": "https://github.com/spinach/GDImage",
   "license": "MIT",
   "authors": {
     "Guy Daher": "guydaher1@gmail.com"
@@ -12,7 +12,7 @@
     "ios": "10.0"
   },
   "source": {
-    "git": "http://github.com/spinach/GDImage.git",
+    "git": "https://github.com/spinach/GDImage.git",
     "tag": "1.0.0"
   },
   "source_files": [
