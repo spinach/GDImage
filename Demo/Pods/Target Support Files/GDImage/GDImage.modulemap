@@ -1,0 +1,6 @@
+framework module GDImage {
+  umbrella header "GDImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
