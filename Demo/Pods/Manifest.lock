@@ -2,15 +2,21 @@ PODS:
   - GDImage (1.0.0)
 
 DEPENDENCIES:
-  - GDImage (from `..`)
+  - GDImage (from `https://github.com/spinach/GDImage`, tag `1.0.0`)
 
 EXTERNAL SOURCES:
   GDImage:
-    :path: ..
+    :git: https://github.com/spinach/GDImage
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  GDImage:
+    :git: https://github.com/spinach/GDImage
+    :tag: 1.0.0
 
 SPEC CHECKSUMS:
-  GDImage: 9e0b6409f3d4b7870cef47f59568ccba5f0ca2bc
+  GDImage: 4a8ad2bed5bc37d78a42819f1706635c9407dae9
 
-PODFILE CHECKSUM: 08b7e5a14315fb7860fcc36f983d0db4add005ad
+PODFILE CHECKSUM: 92f3700780fc4de2760a5743ce4e07753f3bb9de
 
 COCOAPODS: 1.1.0.rc.3
