@@ -13,6 +13,7 @@
 		E210D5251DB73F76006C4941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E210D5231DB73F76006C4941 /* Main.storyboard */; };
 		E210D5271DB73F76006C4941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E210D5261DB73F76006C4941 /* Assets.xcassets */; };
 		E210D52A1DB73F76006C4941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E210D5281DB73F76006C4941 /* LaunchScreen.storyboard */; };
+		E210D5321DB9C236006C4941 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E210D5311DB9C236006C4941 /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E210D5261DB73F76006C4941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E210D5291DB73F76006C4941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E210D52B1DB73F76006C4941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E210D5311DB9C236006C4941 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		E41708E245DEB97DF8EFD48B /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				E210D5261DB73F76006C4941 /* Assets.xcassets */,
 				E210D5281DB73F76006C4941 /* LaunchScreen.storyboard */,
 				E210D52B1DB73F76006C4941 /* Info.plist */,
+				E210D5311DB9C236006C4941 /* placeholder.png */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E210D52A1DB73F76006C4941 /* LaunchScreen.storyboard in Resources */,
+				E210D5321DB9C236006C4941 /* placeholder.png in Resources */,
 				E210D5271DB73F76006C4941 /* Assets.xcassets in Resources */,
 				E210D5251DB73F76006C4941 /* Main.storyboard in Resources */,
 			);
