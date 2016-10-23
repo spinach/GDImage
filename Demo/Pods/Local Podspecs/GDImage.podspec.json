@@ -1,6 +1,6 @@
 {
   "name": "GDImage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A Swift library for downloading images",
   "description": "A Swift library for downloading and caching images from the web",
   "homepage": "https://github.com/spinach/GDImage",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/spinach/GDImage.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "source_files": [
     "GDImage",
