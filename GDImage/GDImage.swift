@@ -26,8 +26,7 @@ public class GDImage {
             return
         }
         
-        let escapedString = url.absoluteString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-        if let image = loadImageFromPath(path: escapedString!) {
+        if let image = Store.loadImage(fromUrlPath: url){
             print("from disk!")
             imageView.image = image
             return
@@ -42,9 +41,7 @@ public class GDImage {
                 else { return }
             
             self.cache.setObject(image, forKey: url.absoluteString as NSString)
-            
-            let escapedString = url.absoluteString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-            self.save(image: image, toPath: escapedString!)
+            Store.save(image: image, toUrlPath:url)
             
             DispatchQueue.main.async() { () -> Void in
                 imageView.image = image
@@ -65,32 +62,5 @@ public class GDImage {
     
     public func cancelDownload(ofImageView imageView: UIImageView) {
         self.downloadTasks[imageView]?.cancel()
-    }
-    
-    public func save(image: UIImage, toPath path:String) {
-        if let data = UIImageJPEGRepresentation(image, 1) {
-            print("got data, now saving")
-            let filename = getDocumentsDirectory().appendingPathComponent(path)
-            try? data.write(to: filename)
-        }
-    }
-    
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
-    
-    func loadImageFromPath(path: String) -> UIImage? {
-        print("Loading image from path: \(path)")
-        let filename = getDocumentsDirectory().appendingPathComponent(path)
-        
-        do {
-            let imageData = try Data(contentsOf: filename)
-            let image = UIImage(data: imageData)
-            return image
-        } catch {
-            return nil
-        }
     }
 }

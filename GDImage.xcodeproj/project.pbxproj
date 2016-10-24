@@ -12,6 +12,7 @@
 		E210D5081DB72EA3006C4941 /* GDImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E210D4FA1DB72EA3006C4941 /* GDImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E210D5121DB73102006C4941 /* GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D5111DB73102006C4941 /* GDImage.swift */; };
 		E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */; };
+		E2339F171DBDC5D400EDCC87 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F161DBDC5D400EDCC87 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		E210D5071DB72EA3006C4941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E210D5111DB73102006C4941 /* GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDImage.swift; sourceTree = "<group>"; };
 		E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GDImage.swift"; sourceTree = "<group>"; };
+		E2339F161DBDC5D400EDCC87 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				E210D4FA1DB72EA3006C4941 /* GDImage.h */,
 				E210D4FB1DB72EA3006C4941 /* Info.plist */,
 				E210D5111DB73102006C4941 /* GDImage.swift */,
+				E2339F161DBDC5D400EDCC87 /* Store.swift */,
 				E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */,
 			);
 			path = GDImage;
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2339F171DBDC5D400EDCC87 /* Store.swift in Sources */,
 				E210D5121DB73102006C4941 /* GDImage.swift in Sources */,
 				E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */,
 			);

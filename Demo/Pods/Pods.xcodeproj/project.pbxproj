@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B83163CF1F12A1DC5555D9FC1A41351 /* GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F535100F8D076B7C7E5DD5A8CEE0A0F /* GDImage.swift */; };
 		0D6D89CD3484D2A7657ACD80F47EC180 /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BC86D40B890A7B0844F888209CA06F /* Pods-Demo-dummy.m */; };
-		23D0A78DA41D595447DF4388B2412B17 /* GDImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9F7EA6AB93B867724A6FC8F5D34159 /* GDImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B5F4E7B13BDBBA9D03C4E798D6CEAB9 /* GDImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A326FECF3AE8ECBC2B99B307E3512631 /* GDImage-dummy.m */; };
-		5AF713409BF049594671897B3D073096 /* UIImageView+GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86945F3F36C35C58855C63BF9B4B96D /* UIImageView+GDImage.swift */; };
-		778709FA36705EA709191BC1523DF3B5 /* GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D20D2CF524C07E3375BD329D8FBDAF /* GDImage.swift */; };
+		339C87C4B37DF0CAB5B6CB3554B32A5C /* UIImageView+GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C90F5A76C4AA7A42F887F9BCD71DAF /* UIImageView+GDImage.swift */; };
+		5555E5317F964B5F919D8D0E5AEC78FB /* GDImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A03D959679FBBD566550E04CFBDD0C /* GDImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95F51A7F8012210A942DBFE336F20791 /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EA1E60232BFA05817BC26ACB8E68BA /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98DF26AECB561AC1C4B873B5C06CF915 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A7863812F444039B0998744D027F744D /* GDImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EF66B4674AA47E7A25447B04E4D9E39F /* GDImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA75F3CC984BE6969237457B48F07FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C0310C7CF96B936F45380881D16AB65E /* GDImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1053A4446CF60C3989EC56190FF1BF84 /* GDImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBC4624BDD1407B7DF29C111083417DF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84675DE6F231B0EE4D562FF918797EA /* Store.swift */; };
+		D21B7E79780A17BA44D742EB0F1C3D63 /* GDImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E418F61176CCF3D07B1265AE49242E17 /* GDImage-dummy.m */; };
+		F57DB8EDBDF3B2EA9018EB7CA2B8F687 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +24,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 77E0F9F552C2C52B9288DC1258AF415C;
+			remoteGlobalIDString = DCF9B156FD359FD47E22EB6E63041FCC;
 			remoteInfo = GDImage;
 		};
 /* End PBXContainerItemProxy section */
@@ -31,38 +32,31 @@
 /* Begin PBXFileReference section */
 		03EA1E60232BFA05817BC26ACB8E68BA /* Pods-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Demo-umbrella.h"; sourceTree = "<group>"; };
 		053BDB9B96926339A082CF0D0B7A1836 /* GDImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1053A4446CF60C3989EC56190FF1BF84 /* GDImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDImage-umbrella.h"; sourceTree = "<group>"; };
+		2F535100F8D076B7C7E5DD5A8CEE0A0F /* GDImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GDImage.swift; sourceTree = "<group>"; };
 		322419E99883B306EE7EC77959FCC8DF /* Pods-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Demo.modulemap"; sourceTree = "<group>"; };
 		3CD5A30239C90F1B549B4AB9299ECF16 /* Pods-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-frameworks.sh"; sourceTree = "<group>"; };
 		3D653C9DA16200D75AD14323AA830C6B /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
-		483755C30F31C41200E49815C25C85F7 /* GDImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GDImage.modulemap; sourceTree = "<group>"; };
+		54B48D4C0FB67596D044994607362B1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71940C1CEB7995DC34CFE54CAF1AEF88 /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		72046AF0876C471548068B9877C99241 /* GDImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDImage.xcconfig; sourceTree = "<group>"; };
-		7B9F7EA6AB93B867724A6FC8F5D34159 /* GDImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDImage-umbrella.h"; sourceTree = "<group>"; };
-		91B38BD5FE7F311993CCCCF96D2CF530 /* GDImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDImage-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A326FECF3AE8ECBC2B99B307E3512631 /* GDImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDImage-dummy.m"; sourceTree = "<group>"; };
+		93C36C81E4DB7AD455D6466990F8FC03 /* GDImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDImage-prefix.pch"; sourceTree = "<group>"; };
+		96EC4CEFB2DF64332086AE5A4BB08981 /* GDImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDImage.xcconfig; sourceTree = "<group>"; };
+		AC1F1BFF5A1142682F583C54491A9960 /* GDImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GDImage.modulemap; sourceTree = "<group>"; };
 		AD7FCF3A14C6BDD7DE97E490E520EE46 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B86945F3F36C35C58855C63BF9B4B96D /* UIImageView+GDImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+GDImage.swift"; sourceTree = "<group>"; };
 		C5BC86D40B890A7B0844F888209CA06F /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
+		C84675DE6F231B0EE4D562FF918797EA /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CA19694C0AC41D598DE4ABFEB300E619 /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
 		CC6A59B0ADA6CB2F51DAE6508E437829 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4C90F5A76C4AA7A42F887F9BCD71DAF /* UIImageView+GDImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+GDImage.swift"; sourceTree = "<group>"; };
 		DAB0701F8F25395B1ED46510ED4B9797 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		E3D20D2CF524C07E3375BD329D8FBDAF /* GDImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GDImage.swift; sourceTree = "<group>"; };
+		E418F61176CCF3D07B1265AE49242E17 /* GDImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDImage-dummy.m"; sourceTree = "<group>"; };
 		E68F8C86FB3267A3C87983DA9E269889 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF66B4674AA47E7A25447B04E4D9E39F /* GDImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GDImage.h; sourceTree = "<group>"; };
-		EFBD97A9E561CBF0F9952A8BC6FC7B0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A03D959679FBBD566550E04CFBDD0C /* GDImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GDImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		96A8A9785B96C46593AE7DACE3662B42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA75F3CC984BE6969237457B48F07FAA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BD7C9054A6261A9CF91C8A809CD43EAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,13 +65,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D966DEC77AA717058EDE341BF0E81873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57DB8EDBDF3B2EA9018EB7CA2B8F687 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C9AE0FDF76E4F4D748A981B28D3096 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC1F1BFF5A1142682F583C54491A9960 /* GDImage.modulemap */,
+				96EC4CEFB2DF64332086AE5A4BB08981 /* GDImage.xcconfig */,
+				E418F61176CCF3D07B1265AE49242E17 /* GDImage-dummy.m */,
+				93C36C81E4DB7AD455D6466990F8FC03 /* GDImage-prefix.pch */,
+				1053A4446CF60C3989EC56190FF1BF84 /* GDImage-umbrella.h */,
+				54B48D4C0FB67596D044994607362B1F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/GDImage";
+			sourceTree = "<group>";
+		};
 		28E20DC1DA91337B3DB5C3A3EAD961F3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6D8647905324901E9112EDEB95C96B4 /* GDImage */,
+				96842A1DE770AB018B91A00E9F36965A /* GDImage */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -88,30 +104,6 @@
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5C4D79960D93D0F7B4D83D5E75EF96B8 /* GDImage */ = {
-			isa = PBXGroup;
-			children = (
-				EF66B4674AA47E7A25447B04E4D9E39F /* GDImage.h */,
-				E3D20D2CF524C07E3375BD329D8FBDAF /* GDImage.swift */,
-				B86945F3F36C35C58855C63BF9B4B96D /* UIImageView+GDImage.swift */,
-			);
-			path = GDImage;
-			sourceTree = "<group>";
-		};
-		6D47FB51691F54EC235A8323796C13B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				483755C30F31C41200E49815C25C85F7 /* GDImage.modulemap */,
-				72046AF0876C471548068B9877C99241 /* GDImage.xcconfig */,
-				A326FECF3AE8ECBC2B99B307E3512631 /* GDImage-dummy.m */,
-				91B38BD5FE7F311993CCCCF96D2CF530 /* GDImage-prefix.pch */,
-				7B9F7EA6AB93B867724A6FC8F5D34159 /* GDImage-umbrella.h */,
-				EFBD97A9E561CBF0F9952A8BC6FC7B0B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Demo/Pods/Target Support Files/GDImage";
 			sourceTree = "<group>";
 		};
 		6F2351C272926D3E0225FEFC2F9C5D1F /* Targets Support Files */ = {
@@ -142,11 +134,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6D8647905324901E9112EDEB95C96B4 /* GDImage */ = {
+		96842A1DE770AB018B91A00E9F36965A /* GDImage */ = {
 			isa = PBXGroup;
 			children = (
-				5C4D79960D93D0F7B4D83D5E75EF96B8 /* GDImage */,
-				6D47FB51691F54EC235A8323796C13B6 /* Support Files */,
+				BE2F581FA0B379AC0412234A65E1AE90 /* GDImage */,
+				21C9AE0FDF76E4F4D748A981B28D3096 /* Support Files */,
 			);
 			name = GDImage;
 			path = ../..;
@@ -158,6 +150,17 @@
 				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE2F581FA0B379AC0412234A65E1AE90 /* GDImage */ = {
+			isa = PBXGroup;
+			children = (
+				F2A03D959679FBBD566550E04CFBDD0C /* GDImage.h */,
+				2F535100F8D076B7C7E5DD5A8CEE0A0F /* GDImage.swift */,
+				C84675DE6F231B0EE4D562FF918797EA /* Store.swift */,
+				D4C90F5A76C4AA7A42F887F9BCD71DAF /* UIImageView+GDImage.swift */,
+			);
+			path = GDImage;
 			sourceTree = "<group>";
 		};
 		ECC58720C5754A079F9A150E40E2FCDD /* Pods-Demo */ = {
@@ -181,12 +184,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F65F83879C06356CC18420E99EB03D20 /* Headers */ = {
+		79B1758642EA211286A0A38139046C18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23D0A78DA41D595447DF4388B2412B17 /* GDImage-umbrella.h in Headers */,
-				A7863812F444039B0998744D027F744D /* GDImage.h in Headers */,
+				C0310C7CF96B936F45380881D16AB65E /* GDImage-umbrella.h in Headers */,
+				5555E5317F964B5F919D8D0E5AEC78FB /* GDImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,13 +204,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		77E0F9F552C2C52B9288DC1258AF415C /* GDImage */ = {
+		DCF9B156FD359FD47E22EB6E63041FCC /* GDImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81931ABC7D852D208BACAC3F174A9CBA /* Build configuration list for PBXNativeTarget "GDImage" */;
+			buildConfigurationList = 845435CB5C3AE0AC4A29B6AC591AD574 /* Build configuration list for PBXNativeTarget "GDImage" */;
 			buildPhases = (
-				71483240C3B522B9A560D409E3B81229 /* Sources */,
-				96A8A9785B96C46593AE7DACE3662B42 /* Frameworks */,
-				F65F83879C06356CC18420E99EB03D20 /* Headers */,
+				2298B699F9C138DBB1E023B93C10EB9F /* Sources */,
+				D966DEC77AA717058EDE341BF0E81873 /* Frameworks */,
+				79B1758642EA211286A0A38139046C18 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -257,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77E0F9F552C2C52B9288DC1258AF415C /* GDImage */,
+				DCF9B156FD359FD47E22EB6E63041FCC /* GDImage */,
 				E1D166362B80C69AFCE598FBE53FB305 /* Pods-Demo */,
 			);
 		};
@@ -272,13 +275,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71483240C3B522B9A560D409E3B81229 /* Sources */ = {
+		2298B699F9C138DBB1E023B93C10EB9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5F4E7B13BDBBA9D03C4E798D6CEAB9 /* GDImage-dummy.m in Sources */,
-				778709FA36705EA709191BC1523DF3B5 /* GDImage.swift in Sources */,
-				5AF713409BF049594671897B3D073096 /* UIImageView+GDImage.swift in Sources */,
+				D21B7E79780A17BA44D742EB0F1C3D63 /* GDImage-dummy.m in Sources */,
+				0B83163CF1F12A1DC5555D9FC1A41351 /* GDImage.swift in Sources */,
+				CBC4624BDD1407B7DF29C111083417DF /* Store.swift in Sources */,
+				339C87C4B37DF0CAB5B6CB3554B32A5C /* UIImageView+GDImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,45 +292,12 @@
 		148CCC0E2A7054FAAC2C9A8FDB7B2822 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GDImage;
-			target = 77E0F9F552C2C52B9288DC1258AF415C /* GDImage */;
+			target = DCF9B156FD359FD47E22EB6E63041FCC /* GDImage */;
 			targetProxy = 4008AF43AD39C26E862C65E1ADA31D8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0FD3783B0A718FF38486F57B4024EA16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72046AF0876C471548068B9877C99241 /* GDImage.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GDImage/GDImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GDImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GDImage/GDImage.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GDImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,9 +377,42 @@
 			};
 			name = Release;
 		};
-		B0C1F5698FDFCCA7BFF9C96EED98CF48 /* Release */ = {
+		8ECD52CBF4D254E52ABBC90BA51AD363 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72046AF0876C471548068B9877C99241 /* GDImage.xcconfig */;
+			baseConfigurationReference = 96EC4CEFB2DF64332086AE5A4BB08981 /* GDImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GDImage/GDImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GDImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GDImage/GDImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GDImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE244AD22595C28F4CD1C2A1154EC0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96EC4CEFB2DF64332086AE5A4BB08981 /* GDImage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -526,11 +530,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81931ABC7D852D208BACAC3F174A9CBA /* Build configuration list for PBXNativeTarget "GDImage" */ = {
+		845435CB5C3AE0AC4A29B6AC591AD574 /* Build configuration list for PBXNativeTarget "GDImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0FD3783B0A718FF38486F57B4024EA16 /* Debug */,
-				B0C1F5698FDFCCA7BFF9C96EED98CF48 /* Release */,
+				8ECD52CBF4D254E52ABBC90BA51AD363 /* Debug */,
+				BE244AD22595C28F4CD1C2A1154EC0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
