@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GDImage"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A Swift library for downloading images"
   s.description  = "A Swift library for downloading and caching images from the web"
   s.homepage     = "https://github.com/spinach/GDImage"
