@@ -22,13 +22,21 @@ class ViewController: UIViewController {
         if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
             self.imageView.setImage(withUrl: url)
             self.imageView.cancelImageDownload()
-            self.imageView.setImage(withUrl: url)
-        }
-        
-        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
             self.imageView2.setImage(withUrl: url)
             self.imageView2.cancelImageDownload()
             self.imageView2.setImage(withUrl: url)
+        }
+        
+//        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
+//            self.imageView2.setImage(withUrl: url)
+//            self.imageView2.cancelImageDownload()
+//            self.imageView2.setImage(withUrl: url)
+//        }
+    }
+    
+    @IBAction func buttonClicked(_ sender: AnyObject) {
+        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
+            self.imageView.setImage(withUrl: url)
         }
     }
 }
