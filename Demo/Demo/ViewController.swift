@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         if let url = URL(string: URL2) {
             self.imageView2.setImage(withUrl: url)
             self.imageView2.cancelImageDownload()
-            print("canceled image download for second ImageView")
+            print("Canceled image download for second ImageView")
         }
     }
     

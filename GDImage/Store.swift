@@ -61,7 +61,7 @@ public class Store {
         guard let path = getEscapedString(fromUrlPath: url) else {return}
         
         if let data = UIImageJPEGRepresentation(image, 1) {
-            print("saving image to path: \(path)")
+            print("Saving image to path: \(path)")
             let filename = getDocumentsDirectory().appendingPathComponent(path)
             try? data.write(to: filename)
         }
@@ -76,5 +76,4 @@ public class Store {
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
-    
 }

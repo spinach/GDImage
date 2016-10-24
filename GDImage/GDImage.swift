@@ -51,7 +51,6 @@ public class GDImage {
         }
         
         self.downloadTasks[imageView]?.resume()
-        
     }
     
     public func setImage(ofImageView imageView: UIImageView, withLink link: String) {
