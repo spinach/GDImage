@@ -12,7 +12,7 @@ GDImage is a Swift library providing background image-loading capabilities.
 
 ## Requirements
 
-- iOS 9.0+ / macOS 10.11+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 9.0+
 - Xcode 8.0+
 - Swift 3.0+
 
@@ -91,14 +91,14 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 - `func cancelDownload(ofImageView: UIImageView)`
 
 ## TODOs
-- [] Handle error cases (when image cannot be found). Can offer an errorHandler in the method
-- [] Provide onCompleteHandler
-- [] Support more image formats
-- [] Write tests
-- [] Provide placeholer image capabilities
-- [] Submit public pod
-- [] More cleanup, especially print statements
-- [] Improve the Demo project
+- Handle error cases (when image cannot be found). Can offer an errorHandler in the method
+- Provide onCompleteHandler
+- Support more image formats
+- Write tests
+- Provide placeholer image capabilities
+- Submit public pod
+- More cleanup, especially print statements
+- Improve the Demo project
 
 ## License
 
