@@ -58,7 +58,7 @@ import GDImage
 
 imageView.setImage(withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
 ```
-GDImage will download the image asynchronously from `url`, puts it in the memory cache and disk cache, and then displays it in `imageView`.
+GDImage will download the image asynchronously, put it in the memory cache and disk cache, and then display it in `imageView`.
 
 ### Demo
 You can quickly try out the library by cloning this repo and opening the Demo project. At the root of the Demo project, run `pod install` and then run the project.
