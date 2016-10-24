@@ -12,31 +12,25 @@ import GDImage
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageView2: UIImageView!
+    
+    let URL1 = "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg"
+    let URL2 = "https://s3.amazonaws.com/dummy-images-guy/IGC1.jpg"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let gdImage = GDImage()
+        gdImage.setImage(ofImageView: imageView, withLink: URL1)
         
-//        let gdImage = GDImage()
-//        gdImage.setImage(ofImageView: self.imageView, withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
-        
-        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
-            self.imageView.setImage(withUrl: url)
-            self.imageView.cancelImageDownload()
-//            self.imageView2.setImage(withUrl: url)
-//            self.imageView2.cancelImageDownload()
-//            self.imageView2.setImage(withUrl: url)
+        if let url = URL(string: URL2) {
+            self.imageView2.setImage(withUrl: url)
+            self.imageView2.cancelImageDownload()
+            print("canceled image download for second ImageView")
         }
-        
-//        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
-//            self.imageView2.setImage(withUrl: url)
-//            self.imageView2.cancelImageDownload()
-//            self.imageView2.setImage(withUrl: url)
-//        }
     }
     
     @IBAction func buttonClicked(_ sender: AnyObject) {
-        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/IGC1.jpg") {
-            self.imageView.setImage(withUrl: url)
+        if let url = URL(string: URL2) {
+            self.imageView2.setImage(withUrl: url)
         }
     }
 }
