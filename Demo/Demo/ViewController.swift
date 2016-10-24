@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
             self.imageView.setImage(withUrl: url)
             self.imageView.cancelImageDownload()
-            self.imageView2.setImage(withUrl: url)
-            self.imageView2.cancelImageDownload()
-            self.imageView2.setImage(withUrl: url)
+//            self.imageView2.setImage(withUrl: url)
+//            self.imageView2.cancelImageDownload()
+//            self.imageView2.setImage(withUrl: url)
         }
         
 //        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonClicked(_ sender: AnyObject) {
-        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
+        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/IGC1.jpg") {
             self.imageView.setImage(withUrl: url)
         }
     }

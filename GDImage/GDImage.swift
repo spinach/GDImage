@@ -11,23 +11,17 @@ import Foundation
 public class GDImage {
     
     private var downloadTasks: [UIImageView:URLSessionDataTask]
-    private var cache: NSCache<NSString, UIImage>
+    private var store: Store
     
     public init() {
         self.downloadTasks = [:]
-        self.cache = NSCache()
+        self.store = Store()
     }
     
     public func setImage(ofImageView imageView: UIImageView, withUrl url: URL) {
         imageView.contentMode = .scaleAspectFit
         
-        if let image = self.cache.object(forKey: url.absoluteString as NSString) {
-            imageView.image = image
-            return
-        }
-        
-        if let image = Store.loadImage(fromUrlPath: url){
-            print("from disk!")
+        if let image = store.get(withUrlPath: url) {
             imageView.image = image
             return
         }
@@ -40,8 +34,7 @@ public class GDImage {
                 let image = UIImage(data: data)
                 else { return }
             
-            self.cache.setObject(image, forKey: url.absoluteString as NSString)
-            Store.save(image: image, toUrlPath:url)
+            self.store.save(image: image, toUrlPath:url)
             
             DispatchQueue.main.async() { () -> Void in
                 imageView.image = image
