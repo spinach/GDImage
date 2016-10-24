@@ -6,7 +6,7 @@ target 'Demo' do
   use_frameworks!
 
   # Pods for Demo
-  # pod 'GDImage', :git => 'https://github.com/spinach/GDImage', :tag => '1.0.1'
-  pod 'GDImage', :path => "../"
+  pod 'GDImage', :git => 'https://github.com/spinach/GDImage', :tag => '1.0.2'
+  # pod 'GDImage', :path => "../"
 
 end
