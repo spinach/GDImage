@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var gdImage = GDImage()
-        gdImage.setImage(ofImageView: self.imageView, withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
-        
-//        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
-//            self.imageView.setImage(withUrl: url)
-//        }
+//        var gdImage = GDImage()
+//        gdImage.setImage(ofImageView: self.imageView, withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
+//        
+        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
+            self.imageView.setImage(withUrl: url)
+            self.imageView.cancelImageDownload()
+            self.imageView.setImage(withUrl: url)
+        }
     }
 }
 
