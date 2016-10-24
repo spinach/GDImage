@@ -36,7 +36,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'GDImage', :git => 'https://github.com/spinach/GDImage', :tag => '1.0.2'
+    pod 'GDImage', :git => 'https://github.com/spinach/GDImage', :tag => '1.0.3'
 end
 ```
 
