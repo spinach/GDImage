@@ -11,17 +11,24 @@ import GDImage
 
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var gdImage = GDImage()
-        gdImage.setImage(ofImageView: self.imageView, withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
+//        let gdImage = GDImage()
+//        gdImage.setImage(ofImageView: self.imageView, withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
         
         if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
             self.imageView.setImage(withUrl: url)
             self.imageView.cancelImageDownload()
             self.imageView.setImage(withUrl: url)
+        }
+        
+        if let url = URL(string: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg") {
+            self.imageView2.setImage(withUrl: url)
+            self.imageView2.cancelImageDownload()
+            self.imageView2.setImage(withUrl: url)
         }
     }
 }

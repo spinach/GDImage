@@ -10,28 +10,31 @@ import Foundation
 
 public class GDImage {
     
-    private var downloadTask: URLSessionDataTask?
+    private var downloadTasks: [UIImageView:URLSessionDataTask]
     
     public init() {
-        self.downloadTask = nil
+        self.downloadTasks = [:]
     }
     
     public func setImage(ofImageView imageView: UIImageView?, withUrl url: URL) {
         imageView?.contentMode = .scaleAspectFit
         
-        self.downloadTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-            DispatchQueue.main.async() { () -> Void in
-                imageView?.image = image
+        if let imageView = imageView {
+            self.downloadTasks[imageView] = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                guard
+                    let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                    let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                    let data = data, error == nil,
+                    let image = UIImage(data: data)
+                    else { return }
+                DispatchQueue.main.async() { () -> Void in
+                    imageView.image = image
+                    self.downloadTasks[imageView] = nil
+                }
             }
+            
+            self.downloadTasks[imageView]?.resume()
         }
-        
-        self.downloadTask?.resume()
     }
     
     public func setImage(ofImageView imageView: UIImageView?, withLink link: String) {
@@ -39,7 +42,7 @@ public class GDImage {
         setImage(ofImageView: imageView, withUrl: url)
     }
     
-    public func cancelImageDownload() {
-        self.downloadTask?.cancel()
+    public func cancelDownload(ofImageView imageView: UIImageView) {
+        self.downloadTasks[imageView]?.cancel()
     }
 }

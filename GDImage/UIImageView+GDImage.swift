@@ -32,6 +32,6 @@ extension UIImageView {
     }
     
     public func cancelImageDownload() {
-        gdImage?.cancelImageDownload()
+        gdImage?.cancelDownload(ofImageView: self)
     }
 }
