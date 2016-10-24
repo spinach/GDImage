@@ -56,7 +56,7 @@ The simplest way to use GDImage is using UIImageView extension
 ```swift
 import GDImage
 
-imageView.setImage(withUrl: url)
+imageView.setImage(withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg")
 ```
 GDImage will download the image asynchronously from `url`, puts it in the memory cache and disk cache, and then displays it in `imageView`.
 
