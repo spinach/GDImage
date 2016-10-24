@@ -12,16 +12,20 @@ public class GDImage {
     
     private var downloadTasks: [UIImageView:URLSessionDataTask]
     private var store: Store
+    private var contentMode: UIViewContentMode
+    private var useCacheStore: Bool
     
-    public init() {
+    public init(useCacheStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit) {
         self.downloadTasks = [:]
         self.store = Store()
+        self.contentMode = contentMode
+        self.useCacheStore = useCacheStore
     }
     
     public func setImage(ofImageView imageView: UIImageView, withUrl url: URL) {
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = self.contentMode
         
-        if let image = store.get(withUrlPath: url) {
+        if useCacheStore, let image = store.get(withUrlPath: url) {
             imageView.image = image
             return
         }
@@ -34,7 +38,9 @@ public class GDImage {
                 let image = UIImage(data: data)
                 else { return }
             
-            self.store.save(image: image, toUrlPath:url)
+            if self.useCacheStore {
+                self.store.save(image: image, toUrlPath:url)
+            }
             
             DispatchQueue.main.async() { () -> Void in
                 imageView.image = image
