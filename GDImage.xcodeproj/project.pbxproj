@@ -10,7 +10,8 @@
 		E210D5011DB72EA3006C4941 /* GDImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E210D4F71DB72EA3006C4941 /* GDImage.framework */; };
 		E210D5061DB72EA3006C4941 /* GDImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D5051DB72EA3006C4941 /* GDImageTests.swift */; };
 		E210D5081DB72EA3006C4941 /* GDImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E210D4FA1DB72EA3006C4941 /* GDImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E210D5121DB73102006C4941 /* Guy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D5111DB73102006C4941 /* Guy.swift */; };
+		E210D5121DB73102006C4941 /* GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D5111DB73102006C4941 /* GDImage.swift */; };
+		E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,8 @@
 		E210D5001DB72EA3006C4941 /* GDImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E210D5051DB72EA3006C4941 /* GDImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDImageTests.swift; sourceTree = "<group>"; };
 		E210D5071DB72EA3006C4941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E210D5111DB73102006C4941 /* Guy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guy.swift; sourceTree = "<group>"; };
+		E210D5111DB73102006C4941 /* GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDImage.swift; sourceTree = "<group>"; };
+		E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GDImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,8 @@
 			children = (
 				E210D4FA1DB72EA3006C4941 /* GDImage.h */,
 				E210D4FB1DB72EA3006C4941 /* Info.plist */,
-				E210D5111DB73102006C4941 /* Guy.swift */,
+				E210D5111DB73102006C4941 /* GDImage.swift */,
+				E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */,
 			);
 			path = GDImage;
 			sourceTree = "<group>";
@@ -200,7 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E210D5121DB73102006C4941 /* Guy.swift in Sources */,
+				E210D5121DB73102006C4941 /* GDImage.swift in Sources */,
+				E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +408,7 @@
 				E210D50D1DB72EA3006C4941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E210D50E1DB72EA3006C4941 /* Build configuration list for PBXNativeTarget "GDImageTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +417,7 @@
 				E210D5101DB72EA3006C4941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
