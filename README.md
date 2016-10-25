@@ -97,6 +97,7 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 - Write tests
 - Provide placeholer image capabilities
 - Submit public pod
+- Support for Carthage
 - More cleanup, especially print statements
 - Improve the Demo project
 
