@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author       = { "Guy Daher" => "guydaher1@gmail.com" }
   s.platform     = :ios, "10.0"
   s.source       = { git: "https://github.com/spinach/GDImage.git", :tag => "#{s.version}" }
-  s.source_files = "GDImage", "GDImage/**/*.{h,m,swift}"
+  s.source_files = "GDImage", "Source/GDImage/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 end
