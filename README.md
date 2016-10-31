@@ -100,7 +100,7 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 - Provide onCompleteHandler
 - [x] Create workspace containing Demo and Library
 - [x] Write to Store Asynchronously
-- Test with more image formats
+- [x] Manutally test with more image formats
 - Write tests
 - [x] Add default ActivityIndicator while loading image
 - Provide placeholer image capabilities
