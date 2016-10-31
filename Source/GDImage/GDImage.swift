@@ -39,14 +39,18 @@ public class GDImage {
                 else { return }
             
             if self.useCacheStore {
-                self.store.save(image: image, toUrlPath:url)
+                DispatchQueue.global(qos: .background).async {
+                    print("Started saving async")
+                    self.store.save(image: image, toUrlPath:url)
+                    print("Finished saving async")
+                }
             }
             
             DispatchQueue.main.async() { () -> Void in
                 imageView.image = image
                 // since done with task, remove from list of tasks
                 self.downloadTasks[imageView] = nil
-                
+        
             }
         }
         
