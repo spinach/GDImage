@@ -40,9 +40,7 @@ public class GDImage {
             
             if self.useCacheStore {
                 DispatchQueue.global(qos: .background).async {
-                    print("Started saving async")
                     self.store.save(image: image, toUrlPath:url)
-                    print("Finished saving async")
                 }
             }
             
