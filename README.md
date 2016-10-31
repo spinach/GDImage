@@ -93,7 +93,8 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 ## TODOs
 - Handle error cases (when image cannot be found). Can offer an errorHandler in the method
 - Provide onCompleteHandler
-- Write to Store Asynchronously
+- [x] Create workspace containing Demo and Library
+- [x] Write to Store Asynchronously
 - Test with more image formats
 - Write tests
 - Provide placeholer image capabilities
