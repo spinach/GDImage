@@ -76,4 +76,10 @@ public class Store {
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
+    
+    func print(_ object: Any) {
+        #if DEBUG
+            Swift.print(object)
+        #endif
+    }
 }
