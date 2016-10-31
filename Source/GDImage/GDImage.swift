@@ -14,19 +14,24 @@ public class GDImage {
     private var store: Store
     private var contentMode: UIViewContentMode
     private var useCacheStore: Bool
+    private let activityIndicator: UIActivityIndicatorView
     
-    public init(useCacheStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit) {
+    public init(useCacheStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit, activityIndicatorStyle: UIActivityIndicatorViewStyle = .gray) {
         self.downloadTasks = [:]
         self.store = Store()
-        self.contentMode = contentMode
         self.useCacheStore = useCacheStore
+        self.contentMode = contentMode
+        self.activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: activityIndicatorStyle)
+
     }
     
     public func setImage(ofImageView imageView: UIImageView, withUrl url: URL) {
         imageView.contentMode = self.contentMode
+        self.activityIndicator.startAnimating(inImageView: imageView)
         
         if useCacheStore, let image = store.get(withUrlPath: url) {
             imageView.image = image
+            activityIndicator.stopAnimating()
             return
         }
         
@@ -36,7 +41,10 @@ public class GDImage {
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
-                else { return }
+                else {
+                    self.activityIndicator.stopAnimating()
+                    return
+                }
             
             if self.useCacheStore {
                 DispatchQueue.global(qos: .background).async {
@@ -46,6 +54,7 @@ public class GDImage {
             
             DispatchQueue.main.async() { () -> Void in
                 imageView.image = image
+                self.activityIndicator.stopAnimating()
                 // since done with task, remove from list of tasks
                 self.downloadTasks[imageView] = nil
         

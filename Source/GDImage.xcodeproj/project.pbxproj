@@ -13,6 +13,7 @@
 		E210D5121DB73102006C4941 /* GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210D5111DB73102006C4941 /* GDImage.swift */; };
 		E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */; };
 		E2339F171DBDC5D400EDCC87 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F161DBDC5D400EDCC87 /* Store.swift */; };
+		E28A59FF1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A59FE1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		E210D5111DB73102006C4941 /* GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDImage.swift; sourceTree = "<group>"; };
 		E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GDImage.swift"; sourceTree = "<group>"; };
 		E2339F161DBDC5D400EDCC87 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E28A59FE1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E210D5111DB73102006C4941 /* GDImage.swift */,
 				E2339F161DBDC5D400EDCC87 /* Store.swift */,
 				E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */,
+				E28A59FE1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift */,
 			);
 			path = GDImage;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28A59FF1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift in Sources */,
 				E2339F171DBDC5D400EDCC87 /* Store.swift in Sources */,
 				E210D5121DB73102006C4941 /* GDImage.swift in Sources */,
 				E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */,

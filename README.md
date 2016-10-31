@@ -80,9 +80,9 @@ let gdImage = GDImage()
 gdImage.setImage(ofImageView: imageView, withUrl: url)
 
 ```
-The constructor lets you customise whether to use caching or not, and the contentMode of the UIImageView
+The constructor lets you customise whether to use caching or not, the contentMode of the UIImageView and the activityIndicatorStyle shown while loading the image.
 
-`GDImage(useCacheStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit)`
+`GDImage(useCacheStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit, activityIndicatorStyle: UIActivityIndicatorViewStyle = .gray)`
 
 The methods for GDImage are similar to the ones of extensions of UIImageView
 
@@ -97,6 +97,7 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 - [x] Write to Store Asynchronously
 - Test with more image formats
 - Write tests
+- [x] Add default ActivityIndicator while loading image
 - Provide placeholer image capabilities
 - Submit public pod
 - Support for Carthage
