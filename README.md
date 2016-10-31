@@ -20,12 +20,6 @@ GDImage is a Swift library providing background image-loading capabilities.
 
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
 > CocoaPods 1.1.0+ is required.
 
 To integrate GDImage into your Xcode project using CocoaPods, specify it in your `Podfile`:
@@ -45,6 +39,17 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+
+### Carthage
+
+
+To integrate GDImage into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "spinach/GDImage"
+```
+
+Run `carthage update` to build the framework and drag the built `GDImage.framework` into your Xcode project.
 
 
 ## Usage
@@ -100,7 +105,7 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 - [x] Add default ActivityIndicator while loading image
 - Provide placeholer image capabilities
 - Submit public pod
-- Support for Carthage
+- [x] Support for Carthage
 - More cleanup, especially print statements
 - Improve the Demo project
 
