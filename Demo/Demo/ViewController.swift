@@ -30,7 +30,11 @@ class ViewController: UIViewController {
     
     @IBAction func buttonClicked(_ sender: AnyObject) {
         if let url = URL(string: URL2) {
-            self.imageView2.setImage(withUrl: url)
+            self.imageView2.setImage(withUrl: url) { (image, error) in
+                print("completion handler")
+                print(error ?? "no error")
+                print(image ?? "no image")
+            }
         }
     }
 }

@@ -95,19 +95,31 @@ The methods for GDImage are similar to the ones of extensions of UIImageView
 - `func setImage(ofImageView: UIImageView, withLink: String)`
 - `func cancelDownload(ofImageView: UIImageView)`
 
+### Completion Handler
+If you wish to do some task at the completion of an image download, or do error handling, you can use the optional argument `completionHandler` like this:
+
+```swift
+imageView.setImage(withUrl: url) { (image, error) in
+    // use error to do error handling
+    // use image to do something with the image
+}
+
+```
+
 ## TODOs
-- Handle error cases (when image cannot be found). Can offer an errorHandler in the method
-- Provide onCompleteHandler
 - [x] Create workspace containing Demo and Library
 - [x] Write to Store Asynchronously
 - [x] Manutally test with more image formats
-- Write tests
 - [x] Add default ActivityIndicator while loading image
-- Provide placeholer image capabilities
-- Submit public pod
 - [x] Support for Carthage
 - [x] More cleanup, especially print statements
+- [x] Handle error cases (when image cannot be found). Can offer an errorHandler in the method
+- [x] Provide onCompleteHandler
+- Write tests
 - Improve the Demo project
+- Prefetch image capabilities
+- Provide placeholer image capabilities
+- Submit public pod
 
 ## License
 

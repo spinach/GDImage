@@ -21,14 +21,14 @@ extension UIImageView {
         }
     }
     
-    public func setImage(withUrl url: URL) {
+    public func setImage(withUrl url: URL, andCompletionHandler completionHandler: CompletionHandler? = nil) {
         if (gdImage == nil) { gdImage = GDImage()}
-        gdImage?.setImage(ofImageView: self, withUrl: url)
+        gdImage?.setImage(ofImageView: self, withUrl: url, andCompletionHandler: completionHandler)
     }
     
-    public func setImage(withLink link: String) {
+    public func setImage(withLink link: String, andCompletionHandler completionHandler: CompletionHandler? = nil) {
         if (gdImage == nil) { gdImage = GDImage()}
-        gdImage?.setImage(ofImageView: self, withLink: link)
+        gdImage?.setImage(ofImageView: self, withLink: link, andCompletionHandler: completionHandler)
     }
     
     public func cancelImageDownload() {

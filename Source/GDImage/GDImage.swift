@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias CompletionHandler = ((_ image: UIImage?, _ error: Error?) -> ())
+
 public class GDImage {
     
     private var downloadTasks: [UIImageView:URLSessionDataTask]
@@ -25,13 +27,14 @@ public class GDImage {
 
     }
     
-    public func setImage(ofImageView imageView: UIImageView, withUrl url: URL) {
+    public func setImage(ofImageView imageView: UIImageView, withUrl url: URL, andCompletionHandler completionHandler: CompletionHandler? = nil) {
         imageView.contentMode = self.contentMode
         self.activityIndicator.startAnimating(inImageView: imageView)
         
         if useCacheStore, let image = store.get(withUrlPath: url) {
             imageView.image = image
             activityIndicator.stopAnimating()
+            completionHandler?(image, nil /* error */)
             return
         }
         
@@ -43,6 +46,7 @@ public class GDImage {
                 let image = UIImage(data: data)
                 else {
                     self.activityIndicator.stopAnimating()
+                    completionHandler?(nil, error)
                     return
                 }
             
@@ -55,16 +59,17 @@ public class GDImage {
             DispatchQueue.main.async() { () -> Void in
                 imageView.image = image
                 self.activityIndicator.stopAnimating()
-                // since done with task, remove from list of tasks
-                self.downloadTasks[imageView] = nil
-        
             }
+            
+            // since done with task, remove from list of tasks
+            self.downloadTasks[imageView] = nil
+            completionHandler?(image, nil /* error */)
         }
         
         self.downloadTasks[imageView]?.resume()
     }
     
-    public func setImage(ofImageView imageView: UIImageView, withLink link: String) {
+    public func setImage(ofImageView imageView: UIImageView, withLink link: String, andCompletionHandler completionHandler: CompletionHandler? = nil) {
         guard let url = URL(string: link) else { return }
         setImage(ofImageView: imageView, withUrl: url)
     }
