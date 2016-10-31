@@ -61,7 +61,7 @@ imageView.setImage(withLink: "https://s3.amazonaws.com/dummy-images-guy/algolia-
 GDImage will download the image asynchronously, put it in the memory cache and disk cache, and then display it in `imageView`.
 
 ### Demo
-You can quickly try out the library by cloning this repo and opening the Demo project. At the root of the Demo project, run `pod install` and then run the project.
+You can quickly try out the library by cloning this repo and opening `GDImage.xcworkspace`. Build the `GDImage` target, then run the `Demo` target.
 
 ### UIImageView Extension Methods
 
