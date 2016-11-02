@@ -14,6 +14,9 @@
 		E2339F151DBD8ECE00EDCC87 /* UIImageView+GDImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */; };
 		E2339F171DBDC5D400EDCC87 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2339F161DBDC5D400EDCC87 /* Store.swift */; };
 		E28A59FF1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28A59FE1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift */; };
+		E2CFB5A41DC9705100550D7C /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFB5A31DC9705100550D7C /* StoreTests.swift */; };
+		E2CFB5A61DC9729C00550D7C /* Windows-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2CFB5A51DC9729C00550D7C /* Windows-10.jpg */; };
+		E2CFB5A81DC974EE00550D7C /* algolia-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2CFB5A71DC974EE00550D7C /* algolia-logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		E2339F141DBD8ECE00EDCC87 /* UIImageView+GDImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GDImage.swift"; sourceTree = "<group>"; };
 		E2339F161DBDC5D400EDCC87 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		E28A59FE1DC6DABE00BC77E8 /* ActivityIndicatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorExtension.swift; sourceTree = "<group>"; };
+		E2CFB5A31DC9705100550D7C /* StoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		E2CFB5A51DC9729C00550D7C /* Windows-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Windows-10.jpg"; sourceTree = "<group>"; };
+		E2CFB5A71DC974EE00550D7C /* algolia-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "algolia-logo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +98,10 @@
 		E210D5041DB72EA3006C4941 /* GDImageTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2CFB5A71DC974EE00550D7C /* algolia-logo.jpg */,
+				E2CFB5A51DC9729C00550D7C /* Windows-10.jpg */,
 				E210D5051DB72EA3006C4941 /* GDImageTests.swift */,
+				E2CFB5A31DC9705100550D7C /* StoreTests.swift */,
 				E210D5071DB72EA3006C4941 /* Info.plist */,
 			);
 			path = GDImageTests;
@@ -199,6 +208,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CFB5A81DC974EE00550D7C /* algolia-logo.jpg in Resources */,
+				E2CFB5A61DC9729C00550D7C /* Windows-10.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E210D5061DB72EA3006C4941 /* GDImageTests.swift in Sources */,
+				E2CFB5A41DC9705100550D7C /* StoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
