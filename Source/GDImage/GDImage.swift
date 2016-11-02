@@ -15,13 +15,13 @@ public class GDImage {
     private var downloadTasks: [UIImageView:URLSessionDataTask]
     private var store: Store
     private var contentMode: UIViewContentMode
-    private var useCacheStore: Bool
+    private var useStore: Bool
     private let activityIndicator: UIActivityIndicatorView
     
-    public init(useCacheStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit, activityIndicatorStyle: UIActivityIndicatorViewStyle = .gray) {
+    public init(useStore:Bool = true, contentMode: UIViewContentMode = .scaleAspectFit, activityIndicatorStyle: UIActivityIndicatorViewStyle = .gray) {
         self.downloadTasks = [:]
         self.store = Store()
-        self.useCacheStore = useCacheStore
+        self.useStore = useStore
         self.contentMode = contentMode
         self.activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: activityIndicatorStyle)
 
@@ -31,7 +31,7 @@ public class GDImage {
         imageView.contentMode = self.contentMode
         self.activityIndicator.startAnimating(inImageView: imageView)
         
-        if useCacheStore, let image = store.get(withUrlPath: url) {
+        if useStore, let image = store.get(withUrlPath: url) {
             imageView.image = image
             activityIndicator.stopAnimating()
             completionHandler?(image, nil /* error */)
@@ -50,7 +50,7 @@ public class GDImage {
                     return
                 }
             
-            if self.useCacheStore {
+            if self.useStore {
                 DispatchQueue.global(qos: .background).async {
                     self.store.save(image: image, toUrlPath:url)
                 }
@@ -71,7 +71,7 @@ public class GDImage {
     
     public func setImage(ofImageView imageView: UIImageView, withLink link: String, andCompletionHandler completionHandler: CompletionHandler? = nil) {
         guard let url = URL(string: link) else { return }
-        setImage(ofImageView: imageView, withUrl: url)
+        setImage(ofImageView: imageView, withUrl: url, andCompletionHandler: completionHandler)
     }
     
     public func cancelDownload(ofImageView imageView: UIImageView) {

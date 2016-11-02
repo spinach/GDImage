@@ -20,7 +20,6 @@ class StoreTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        store = Store()
         bundle = Bundle(for: type(of: self))
     }
     
@@ -30,6 +29,7 @@ class StoreTests: XCTestCase {
     }
     
     func testCacheMiss() {
+        store = Store()
         let randomImageToPut = UIImage(named: "Windows-10.jpg", in: bundle, compatibleWith: nil)
         store.putInCache(image: randomImageToPut!, forKey: URL(string: URLString2)!)
         
@@ -38,6 +38,7 @@ class StoreTests: XCTestCase {
     }
     
     func testCacheHit() {
+        store = Store()
         let imageToPut = UIImage(named: "Windows-10.jpg", in: bundle, compatibleWith: nil)
         let anotherImage = UIImage(named: "algolia-logo.jpg", in: bundle, compatibleWith: nil)
         store.putInCache(image: imageToPut!, forKey: URL(string: URLString1)!)
@@ -46,4 +47,5 @@ class StoreTests: XCTestCase {
         XCTAssertEqual(imageToPut, imageFromCache, "inserted image should be the same as cache result")
         XCTAssertNotEqual(anotherImage, imageFromCache, "2 different images should not be equal")
     }
+
 }

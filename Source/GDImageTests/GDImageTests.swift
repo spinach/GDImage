@@ -11,9 +11,12 @@ import XCTest
 
 class GDImageTests: XCTestCase {
     
+    let URLString1 = "https://s3.amazonaws.com/dummy-images-guy/algolia-logo.jpg"
+    var bundle: Bundle!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        bundle = Bundle(for: type(of: self))
     }
     
     override func tearDown() {
@@ -21,15 +24,43 @@ class GDImageTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        XCTAssertNotNil("hi", "hi should not be null")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testDownloadImageSucceeds() {
+        let expectation = self.expectation(description: "wait for downloading image")
+        let gdImage = GDImage(useStore: false)
+        let expectedImage = UIImage(named: "algolia-logo.jpg", in: bundle, compatibleWith: nil)
+        let imageView = UIImageView()
+        gdImage.setImage(ofImageView: imageView, withLink: URLString1) { (actualImage, error) in
+            expectation.fulfill()
+            XCTAssert(self.image(image1: expectedImage!, isEqualTo: actualImage!))
+            XCTAssertNil(error)
         }
+        
+        waitForExpectations(timeout: 5, handler: nil)
     }
     
+    func testDownloadImageFails() {
+        let expectation = self.expectation(description: "wait for downloading image")
+        let gdImage = GDImage(useStore: false)
+        let imageView = UIImageView()
+        gdImage.setImage(ofImageView: imageView, withLink: URLString1 + "random") { (imageResponse, error) in
+            expectation.fulfill()
+            XCTAssertNil(imageResponse)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCancelDownload() {
+        let gdImage = GDImage(useStore: false)
+        let imageView = UIImageView()
+        gdImage.setImage(ofImageView: imageView, withLink: URLString1)
+        gdImage.cancelDownload(ofImageView: imageView)
+        XCTAssertNil(imageView.image)
+    }
+    
+    func image(image1: UIImage, isEqualTo image2: UIImage) -> Bool {
+        let data1: NSData = UIImagePNGRepresentation(image1)! as NSData
+        let data2: NSData = UIImagePNGRepresentation(image2)! as NSData
+        return data1.isEqual(data2)
+    }
 }

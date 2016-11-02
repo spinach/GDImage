@@ -115,7 +115,8 @@ imageView.setImage(withUrl: url) { (image, error) in
 - [x] More cleanup, especially print statements
 - [x] Handle error cases (when image cannot be found). Can offer an errorHandler in the method
 - [x] Provide onCompleteHandler
-- Write tests
+- [x] Write some basic UTs
+- Write more in-depth UTs
 - Improve the Demo project
 - Prefetch image capabilities
 - Provide placeholer image capabilities
