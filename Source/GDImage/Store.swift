@@ -8,7 +8,12 @@
 
 import Foundation
 
-public class Store {
+public protocol ImageStore {
+    func get(withUrlPath urlPath:URL) -> UIImage?
+    func save(image: UIImage, toUrlPath url:URL)
+}
+
+public class Store : ImageStore {
     
     private var cache: NSCache<NSString, UIImage>
     
