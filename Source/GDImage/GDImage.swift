@@ -13,7 +13,7 @@ public typealias CompletionHandler = ((_ image: UIImage?, _ error: Error?) -> ()
 public class GDImage {
     
     private var downloadTasks: [UIImageView:URLSessionDataTask]
-    private var store: Store
+    private var store: ImageStore
     private var contentMode: UIViewContentMode
     private var useStore: Bool
     private let activityIndicator: UIActivityIndicatorView
