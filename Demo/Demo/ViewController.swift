@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gdImage = GDImage()
+        let gdImage = GDImage(useStore: false)
         gdImage.setImage(ofImageView: imageView, withLink: URL1)
         
         if let url = URL(string: URL2) {
