@@ -1,4 +1,4 @@
-# GDImage
+# 🖼 GDImage
 
 GDImage is a Swift library providing background image-loading capabilities.
 
